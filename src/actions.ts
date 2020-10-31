@@ -1,0 +1,8 @@
+import { notesReducer } from "./notesReducer"
+
+export type Action = {type: "ADD_NOTE"; payload: string}
+
+export const addNote = (note:string):Action => ({
+    type: "ADD_NOTE",
+    payload: note,
+})
